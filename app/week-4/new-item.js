@@ -20,21 +20,22 @@ export default function NewItem() {
     return (
         <div className="flex justify-center items-center min-h-screen">
             <div className="flex flex-col items-center gap-4">
-                <p className="text-9xl font-bold text-white justify-center ">{quantity}</p>
-                <div className="space-x-4 flex  text-4xl ">   
+                
+                <div className="flex items-center space-x-6 bg-white rounded-3xl p-10 shadow-lg outline-8 outline-blue-300">   
                     <button 
                     onClick={decrement} 
                     disabled={quantity <= 1} 
                     title= {quantity <= 1 ? "Quantity cannot be less than 1" : ""}
-                    className="justify-center text-6xl bg-red-400 text-black px-9 py-4 rounded-full disabled:bg-gray-400 disabled:cursor-not-allowed"
+                    className="justify-center text-4xl  bg-red-400 text-black w-12 h-12 rounded-full shrink-0 disabled:bg-gray-400 disabled:cursor-not-allowed"
                     >
-                    -
+                    −
                     </button>
+                    <p className="text-9xl font-bold text-black justify-center ">{quantity}</p>
                     <button 
                     onClick={increment} 
                     disabled={quantity >= 20} 
                     title={quantity >= 20 ? "Quantity cannot be more than 20" : ""}
-                    className="justify-center text-6xl bg-green-400 text-black px-7 py-4 rounded-full disabled:bg-gray-400 disabled:cursor-not-allowed"
+                    className="justify-center text-4xl bg-green-400 text-black w-12 h-12 rounded-full shrink-0 disabled:bg-gray-400 disabled:cursor-not-allowed"
                     >
                     +
                     </button>
