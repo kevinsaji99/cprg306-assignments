@@ -31,11 +31,11 @@ export default function Page() {
       <div className="mx-auto w-full md:w-fit">
         <h1 className="text-3xl font-bold mb-6">Shopping List</h1>
         <div className="flex flex-col md:flex-row gap-10 items-start">
-          <div className="flex flex-col gap-6 w-full md:w-[28rem] shrink-0">
+          <div className="flex flex-col gap-6 w-full md:w-md shrink-0">
             <NewItem onAddItem={handleAddItem} />
             <ItemList items={items} onItemSelect={handleItemSelect} />
           </div>
-          <div className="w-full md:w-[36rem] shrink-0">
+          <div className="w-full md:w-xl shrink-0">
             <MealIdeas ingredient={selectedItemName} />
           </div>
         </div>
