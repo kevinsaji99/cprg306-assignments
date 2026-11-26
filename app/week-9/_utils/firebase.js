@@ -10,11 +10,6 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-console.log("apiKey check:", {
-  length: firebaseConfig.apiKey?.length,
-  startsWith: firebaseConfig.apiKey?.slice(0, 4),
-  hasColon: firebaseConfig.apiKey?.includes(":"),
-});
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
