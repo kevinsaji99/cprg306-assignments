@@ -38,7 +38,7 @@ export default function Page() {
             Logout
           </button>
           <p>
-            <Link href="/week-9/shopping-list" className="text-blue-400 underline">
+            <Link href="/week-10/shopping-list" className="text-blue-400 underline">
               Continue to your Shopping List
             </Link>
           </p>
